@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Montserrat:ital,wght@0,700;1,500&display=swap');
+
+
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+     background-color:rgb(187, 238, 187) ;
+       /* font-family: 'Kumbh Sans', sans-serif;*/
+        font-family: 'Montserrat', sans-serif;
+   /* position: relative;*/
+    /* width: 1200px;*/
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3.5rem;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+    
+}
+
+.logo {
+    font-size: 0.9rem;
+    color: rgb(4, 4, 166);
+    font-weight: 600;
+     margin-left: 40px;
+}
+
+.nav-bar .active {
+    text-decoration-line: underline;
+    text-decoration-color:blue ;
+    text-decoration-thickness:2px ;
+}
+
+.nav-bar ul {
+ list-style-type: none;
+ display: flex;
+}
+
+.nav-bar ul li {
+ padding: 2rem 3rem;
+}
+
+.nav-bar ul li a {
+ text-decoration: none;
+ color: rgb(83, 82, 82);
+ font-size: 0.9rem;
+ font-weight: bold;
+}
+
+ .content {
+    display: flex;
+  justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+} 
+ 
+  .image {
+      width:1300px;
+         height: 1300px;
+        position: relative;
+        right: 150px;
+        bottom: 180px;
+      
+} 
+ 
+.image img {
+     width: 100%;
+    height: 100%;
+    object-fit: contain;
+}   
+ 
+.content-text {
+    position: relative;
+    left: 87px;
+    bottom: 130px;
+} 
+
+ .content-text h1 {
+    font-size: 5.5rem;
+    color: rgb(54, 54, 171);
+    font-weight: bold;
+    line-height: 90px;
+}  
+
+ .content-text p {
+     font-size: 1.2rem;
+    color: rgb(109, 109, 109);
+} 
+
+.content-text button {
+    width: 150px;
+    padding: 11px 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color:rgba(253, 233, 9, 0.84) ;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+ .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: o;
+    position: fixed;
+    text-align: center;
+    margin-bottom: 25px;
+}  
+
+@media (max-width:1310px) {
+    .content-text h1 {
+        font-size: 5rem;
+    }
+
+    .content-text p {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width:1230px) {
+    .content-text h1 {
+        font-size: 4.5rem;
+    }
+
+    .content-text p {
+        font-size: .99rem;
+    }
+
+}
+
+@media (max-width:1208px) {
+    .content-text h1 {
+        font-size: 3.5rem;
+        line-height: 60px;
+    }
+
+    .content-text p {
+        font-size: .75rem;
+    }
+
+    .image {
+        width: 950px;
+    }
+
+}
+
+@media (max-width:1128px) {
+    .content-text h1 {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .content-text p {
+        font-size: .55rem;
+    }
+
+    .image {
+        width: 900px;
+    }
+
+}
+
+@media (max-width:1056px) {
+    .nav-bar ul li a, .logo {
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width:1008px) {
+    .nav-bar ul li a, .logo {
+        font-size: .75rem;
+    }
+
+    .image {
+        width: 850px;
+    }
+
+}
+
+@media (max-width:987px) {
+    .nav-bar ul li a, .logo {
+        font-size: .66rem;
+    }
+
+}
+
+@media (max-width:960px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 25px;
+
+    }
+
+    .content-text {
+        order: 2;
+        position: relative;
+        bottom: 220px;
+        margin-right: 120px;
+    }
+
+    .image {
+        width: 800px;
+    }
+
+    .nav-bar ul li a, .logo {
+        font-size: .6rem;
+    }
+
+}
+
+@media (max-width:941px) {
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar ul {
+        order: 2;
+    }
+
+    .image {
+        width: 750px;
+    }
+
+    .content-text button {
+        width: 120px;
+    }
+
+}  
+
+@media (max-width:769px) {
+    .nav-bar ul li {
+        padding: 25px 15px;
+    }
+
+    .image {
+        width: 700px;
+    }
+}
+
+@media (max-width:603px) {
+    .image {
+        width: 650px;
+    }
+
+    .content {
+        margin-left: 40px;
+    }
+
+}
+
+@media (max-width:515px) {
+    .image {
+        width: 600px;
+        margin-left: 80px;
+        
+    }
+
+     
+}
+
+@media (max-width:452px) {
+    .image {
+        width: 550px;
+    }
+
+}
+
